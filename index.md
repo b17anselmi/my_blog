@@ -12,6 +12,7 @@ title: Home
           <a href="{{ post.url }}">{{ post.title }}</a>
       </h3>
         <div class="date">{{post.date}}</div>
+        <div class="author">{{post.author}}</div>
   </div>
   {% endfor %}
 </div>
