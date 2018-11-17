@@ -4,5 +4,14 @@
 
 layout: page
 title: Home
-permalink: /home/
 ---
+<div >
+  {% for post in site.posts %}
+  <div class="post">
+      <h3>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+        <div class="date">{{post.date}}</div>
+  </div>
+  {% endfor %}
+</div>
